@@ -15,12 +15,9 @@ async function main() {
   //console.log("Token address:", token.address);
 
   const marketContract = await ethers.getContractFactory("DGNMMarket");
-  const dGNMMarket = await marketContract.deploy("0xca38076a23666FcDF544F473e41AA76B981289BF"); //Need nftContract Address
+  const dGNMMarket = await marketContract.deploy("0x5dee317aadde6597d6f955fa88da5492c69a7945"); //Need nftContract Address
   console.log("marketContract address:", dGNMMarket.address);
   
-  //const WDToken = await ethers.getContractFactory("WDToken");
-  //const wDToken = await WDToken.deploy();
-  //console.log("WDToken address:", wDToken.address);
 }
 
 main()

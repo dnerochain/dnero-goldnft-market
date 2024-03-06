@@ -18,9 +18,6 @@ async function main() {
   const dGNMCollectors = await collectorsContract.deploy();
   console.log("collectorsContract address:", dGNMCollectors.address);
   
-  //const WDToken = await ethers.getContractFactory("WDToken");
-  //const wDToken = await WDToken.deploy();
-  //console.log("WDToken address:", wDToken.address);
 }
 
 main()
