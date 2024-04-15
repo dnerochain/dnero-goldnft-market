@@ -143,8 +143,8 @@ const Dashboard = () => {
             }
           })
         );
-        setCreatedNftsList(items);
-      } else {
+        // setCreatedNftsList(items);
+     // } else {
         setCreatedNftsList([]);
       }
     }
@@ -152,8 +152,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     const get = async () => {
-    //  if (window.ethereum !== undefined) {
-	  if (window.ethereum) {	  
+    if (window.ethereum !== undefined) {  
         await getUserTokens();
         await getCreatedNfts();
       }
